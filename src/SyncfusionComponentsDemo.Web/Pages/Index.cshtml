@@ -1,0 +1,17 @@
+﻿@page
+@using Microsoft.AspNetCore.Mvc.Localization
+@using SyncfusionComponentsDemo.Localization
+@using Volo.Abp.Users
+@model SyncfusionComponentsDemo.Web.Pages.IndexModel
+@inject IHtmlLocalizer<SyncfusionComponentsDemoResource> L
+@inject ICurrentUser CurrentUser
+@section styles {
+<abp-style src="/Pages/Index.css" />
+}
+@section scripts {
+<abp-script src="/Pages/Index.js" />
+}
+<div class="container">
+	<h2>Syncfusion - Calendar Component</h2>
+	<ejs-calendar id="calendar"></ejs-calendar>
+</div>
